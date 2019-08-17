@@ -1,3 +1,3 @@
 module github.com/noah-blockchain/noah-explorer-tools
 
-go 1.12.7
+go 1.12

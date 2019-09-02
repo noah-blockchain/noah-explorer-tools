@@ -15,7 +15,7 @@ type Validator struct {
 	Status           *uint8     `json:"status"`
 	Commission       *uint64    `json:"commission"`
 	TotalStake       *string    `json:"total_stake" sql:"type:numeric(70)"`
-	PublicKey        string     `json:"public_key"  sql:"type:varchar(64)"`
+	PublicKey        string     `json:"public_key"  sql:"type:varchar(66)"`
 	UpdateAt         *time.Time `json:"update_at"`
 	RewardAddress    *Address   `json:"reward_address" pg:"fk:reward_address_id"`
 	OwnerAddress     *Address   `json:"owner_address"  pg:"fk:owner_address_id"`
@@ -24,5 +24,5 @@ type Validator struct {
 
 //Return validators PK with prefix
 func (v Validator) GetPublicKey() string {
-	return `Mp` + v.PublicKey
+	return `Np` + v.PublicKey
 }

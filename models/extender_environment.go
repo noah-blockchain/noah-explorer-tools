@@ -8,6 +8,8 @@ type ExtenderEnvironment struct {
 	DbName                          string
 	DbUser                          string
 	DbPassword                      string
+	DbHost                          string
+	DbPort                          string
 	DbMinIdleConns                  int
 	DbPoolSize                      int
 	WsLink                          string

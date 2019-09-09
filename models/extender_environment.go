@@ -9,7 +9,7 @@ type ExtenderEnvironment struct {
 	DbUser                          string
 	DbPassword                      string
 	DbHost                          string
-	DbPort                          string
+	DbPort                          int
 	DbMinIdleConns                  int
 	DbPoolSize                      int
 	WsLink                          string

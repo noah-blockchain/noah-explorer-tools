@@ -1,6 +1,6 @@
 package models
 
-type ExtenderEnvironment struct {
+type ExtenderEnvironment struct { // todo wsLink
 	AppName                         string
 	BaseCoin                        string
 	CoinsUpdateTime                 int

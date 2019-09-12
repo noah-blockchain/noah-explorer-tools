@@ -12,7 +12,8 @@ type ExtenderEnvironment struct {
 	DbPort                          int
 	DbMinIdleConns                  int
 	DbPoolSize                      int
-	WsLink                          string
+	WsHost                          string
+	WsPort                          int
 	WsKey                           string
 	NodeApi                         string
 	ApiHost                         string

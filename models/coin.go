@@ -16,5 +16,5 @@ type Coin struct {
 	UpdatedAt             time.Time  `json:"updated_at"`
 	DeletedAt             *time.Time `json:"deleted_at"      pg:",soft_delete"`
 
-	NoahAddress string `sql:"address"`
+	Address string `json:"address" sql:"-"`
 }

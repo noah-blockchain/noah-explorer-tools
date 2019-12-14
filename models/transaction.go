@@ -137,5 +137,5 @@ func (t *Transaction) GetFee() uint64 {
 
 //Return transactions hash with prefix
 func (t *Transaction) GetHash() string {
-	return `Mt` + t.Hash
+	return `Nt` + t.Hash
 }

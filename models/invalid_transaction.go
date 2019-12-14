@@ -16,5 +16,5 @@ type InvalidTransaction struct {
 
 //Return transactions hash with prefix
 func (t InvalidTransaction) GetHash() string {
-	return `Mt` + t.Hash
+	return `Nt` + t.Hash
 }

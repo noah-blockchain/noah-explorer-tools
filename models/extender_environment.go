@@ -1,6 +1,6 @@
 package models
 
-type ExtenderEnvironment struct {
+type ExtenderEnvironment struct { // todo wsLink
 	AppName                         string
 	BaseCoin                        string
 	CoinsUpdateTime                 int
@@ -8,9 +8,12 @@ type ExtenderEnvironment struct {
 	DbName                          string
 	DbUser                          string
 	DbPassword                      string
+	DbHost                          string
+	DbPort                          int
 	DbMinIdleConns                  int
 	DbPoolSize                      int
-	WsLink                          string
+	WsHost                          string
+	WsPort                          int
 	WsKey                           string
 	NodeApi                         string
 	ApiHost                         string

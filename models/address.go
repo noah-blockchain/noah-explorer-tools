@@ -16,5 +16,5 @@ type Address struct {
 
 // Return address with prefix
 func (a *Address) GetAddress() string {
-	return `Mx` + a.Address
+	return `NOAHx` + a.Address
 }

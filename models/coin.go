@@ -15,4 +15,6 @@ type Coin struct {
 	Symbol                string     `json:"symbol"          sql:"type:varchar(20)"`
 	UpdatedAt             time.Time  `json:"updated_at"`
 	DeletedAt             *time.Time `json:"deleted_at"      pg:",soft_delete"`
+
+	Address string `json:"address" sql:"-"`
 }

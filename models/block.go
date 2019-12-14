@@ -26,7 +26,7 @@ type Block struct {
 
 //Return block hash with prefix
 func (t *Block) GetHash() string {
-	return `Mh` + t.Hash
+	return `Nh` + t.Hash
 }
 
 type BlockAddresses struct {
